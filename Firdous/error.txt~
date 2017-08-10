@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "par2d_v2.py", line 400, in <module>
+    parallel_move()
+  File "par2d_v2.py", line 205, in parallel_move
+    limb_left.move_to_joint_positions(joint_anglel_input)
+  File "/home/cwon/ros_ws/src/baxter_interface/src/baxter_interface/limb.py", line 440, in move_to_joint_positions
+    self.set_joint_positions(filtered_cmd())
+  File "/home/cwon/ros_ws/src/baxter_interface/src/baxter_interface/limb.py", line 429, in filtered_cmd
+    cmd[joint] = 0.012488 * positions[joint] + 0.98751 * cmd[joint]
+KeyError: 'left_w0'
+
